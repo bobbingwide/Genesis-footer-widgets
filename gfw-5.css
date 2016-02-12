@@ -1,0 +1,60 @@
+/* (C) Copyright Bobbing Wide 2015 */
+/* 5 footer widgets */
+
+/**
+ 
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3,
+.footer-widgets-4,
+.footer-widgets-5 {
+	width: 20%;
+}
+*/
+
+.footer-widgets-1,
+.footer-widgets-2, 
+.footer-widgets-3,
+.footer-widgets-4 {
+	float: left;
+}
+
+.footer-widgets-5 {
+	float: right;
+}
+
+@media only screen and (max-width: 1200px) {
+
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.footer-widgets-4 {
+		width: 50%;
+		text-align: left;
+	}
+
+	.footer-widgets-3 {
+		clear: both;
+	}
+	
+	.footer-widgets-5 {
+		width: 100%;
+		text-align: center;
+		float: left;
+	}
+
+}
+
+@media only screen and (max-width: 960px) {
+
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.footer-widgets-4,
+	.footer-widgets-5
+		width: 100%;
+		text-align: left;
+	}
+
+}
+
