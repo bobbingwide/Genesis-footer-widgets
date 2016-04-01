@@ -9,7 +9,6 @@
 .footer-widgets-4 {
 	width: 25%;
 }
-*/
 
 .footer-widgets-1,
 .footer-widgets-2, 
@@ -20,6 +19,7 @@
 .footer-widgets-4 {
 	float: right;
 }
+*/
 
 @media only screen and (max-width: 1200px) {
 
