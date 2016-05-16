@@ -3,7 +3,7 @@
 Plugin Name: Genesis Footer Widgets
 Plugin URI: http://www.oik-plugins.com/oik-plugins/genesis-footer-widgets
 Description: Responsive Footer Widgets for the Genesis theme framework 
-Version: 0.0.0
+Version: 0.0.1
 Author: bobbingwide
 Author URI: http://www.oik-plugins.com/author/bobbingwide
 Text Domain: genesis-footer-widgets
