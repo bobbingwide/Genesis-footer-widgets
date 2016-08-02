@@ -94,7 +94,9 @@ function gfw_footer_widgets() {
  */
 function gfw_wp_footer() {
 	$supports = gfw_footer_widgets(); 
-	wp_enqueue_style( "gfw_footer", WP_PLUGIN_URL . "/genesis-footer-widgets/gfw-$supports.css" );
+	if ( $supports ) {
+		wp_enqueue_style( "gfw_footer", WP_PLUGIN_URL . "/genesis-footer-widgets/gfw-$supports.css" );
+	}
 
 }
 

@@ -1,0 +1,40 @@
+/* (C) Copyright Bobbing Wide 2016 */
+/* 2 footer widgets */
+
+
+ 
+.footer-widgets-1,
+.footer-widgets-2 {
+	width: 50%;
+}
+
+.footer-widgets-1 {
+	float: left;
+}
+
+.footer-widgets-2 {
+	float: right;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+	.footer-widgets-1,
+	.footer-widgets-2 {
+		width: 50%;
+		text-align: left;
+	}
+
+}
+
+@media only screen and (max-width: 960px) {
+
+	.footer-widgets-1,
+	.footer-widgets-2 {
+		width: 100%;
+		text-align: left;
+	}
+
+}
+
