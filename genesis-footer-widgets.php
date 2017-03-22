@@ -57,19 +57,21 @@ All of the above come before "init", so we can wait until then.
  * 
  */
 function gfw_loaded() {
-	add_action( "init", "gfw_init" );
-	add_action( "wp_footer", "gfw_wp_footer" );
+	add_action( "oik_loaded", "gfw_init" );
 }
 
 /**
  * Implement "init" action hook for genesis-footer-widgets
  */
 function gfw_init() {
-	$supports = gfw_footer_widgets();
+	//$supports = gfw_footer_widgets();
+	add_action( "wp_footer", "gfw_wp_footer" );
 }
 
 /**
  * Return count of footer widgets required
+ * 
+ * Note: get_theme_support returns an array
  */
 function gfw_footer_widgets() { 
 	$supports = get_theme_support( 'genesis-footer-widgets' );
@@ -83,7 +85,7 @@ function gfw_footer_widgets() {
 
 
 /**
- * Enqueue the required genesis-footer-widget CSS
+ * Enqueues the required genesis-footer-widget CSS
  
 [hook wp_footer action ],1
 [hook wp_footer;genesis_pre_get_option_footer_scripts filter 2],1
@@ -95,9 +97,9 @@ function gfw_footer_widgets() {
 function gfw_wp_footer() {
 	$supports = gfw_footer_widgets(); 
 	if ( $supports ) {
-		wp_enqueue_style( "gfw_footer", WP_PLUGIN_URL . "/genesis-footer-widgets/gfw-$supports.css" );
+		$url = plugins_url( "/genesis-footer-widgets/gfw-$supports.css" );
+		wp_enqueue_style( "gfw_footer", $url );
 	}
-
 }
 
 
