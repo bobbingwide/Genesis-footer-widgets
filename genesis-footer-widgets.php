@@ -86,6 +86,8 @@ function gfw_footer_widgets() {
 
 /**
  * Enqueues the required genesis-footer-widget CSS
+ * 
+ 
  
 [hook wp_footer action ],1
 [hook wp_footer;genesis_pre_get_option_footer_scripts filter 2],1
@@ -98,7 +100,11 @@ function gfw_wp_footer() {
 	$supports = gfw_footer_widgets(); 
 	if ( $supports ) {
 		$url = plugins_url( "/genesis-footer-widgets/gfw-$supports.css" );
-		wp_enqueue_style( "gfw_footer", $url );
+		$timestamp = null;
+		if ( defined( "SCRIPT_DEBUG" ) && SCRIPT_DEBUG ) {
+			$timestamp = filemtime( oik_path( "gfw-$supports.css", "genesis-footer-widgets" ) );
+		}		
+		wp_enqueue_style( "gfw_footer", $url, array(), $timestamp );
 	}
 }
 
