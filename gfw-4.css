@@ -1,4 +1,4 @@
-/* (C) Copyright Bobbing Wide 2015 */
+/* (C) Copyright Bobbing Wide 2015-2017 */
 /* 4 footer widgets */
 
 /**
@@ -21,6 +21,7 @@
 }
 */
 
+
 @media only screen and (max-width: 1200px) {
 
 	.footer-widgets-1,
@@ -41,10 +42,9 @@
 	.footer-widgets-1,
 	.footer-widgets-2,
 	.footer-widgets-3,
-	.footer-widgets-4
+	.footer-widgets-4 {
 		width: 100%;
 		text-align: left;
 	}
 
 }
-
