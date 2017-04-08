@@ -1,4 +1,5 @@
 # Genesis-footer-widgets 
+![banner](https://raw.githubusercontent.com/bobbingwide/genesis-footer-widgets/master/assets/genesis-footer-widgets-banner-772x250.jpg)
 * Contributors: bobbingwide
 * Donate link: http://www.oik-plugins.com/oik/oik-donate/
 * Tags: Genesis, footer, widgets, responsive
@@ -58,10 +59,10 @@ New plugin, available from GitHub oik-plugins.
 
 ## Changelog 
 # 0.0.1 
-* Added: Added gfw-3.css for 3 footer widgets [github bobbingwide genesis-footer-widgets issue 1]
+* Added: Added gfw-3.css for 3 footer widgets https://github.com/bobbingwide/genesis-footer-widgets/issues/1
 * Tested: With WordPress 4.5.2 and WordPress MultiSite
 
 # 0.0.0 
-* Added: New plugin [github bobbingwide genesis-footer-widgets issue 1]
+* Added: New plugin https://github.com/bobbingwide/genesis-footer-widgets/issues/1
 
 
